@@ -1,4 +1,6 @@
 <h1>FRC Scouting App</h1>
+<h4>Last Updated: 3/9/25</h4>
+
 A mobile app developed by members of FIRST Robotics team 3464 "Sim-City"
 
 <h2>Introduction</h2>

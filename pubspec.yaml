@@ -1,5 +1,5 @@
 name: frc_scouting_app
-description: "A new Flutter project."
+description: 'A mobile app developed by members of FIRST Robotics team 3464 "Sim-City"'
 publish_to: 'none'
 version: 0.1.0
 
@@ -17,6 +17,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/clipboard.png
+
   fonts:
     - family: Poppins
       fonts:
@@ -47,9 +50,6 @@ flutter:
           style: italic
         - asset: assets/fonts/Poppins-LightItalic.ttf
           weight: 300
-          style: italic
-        - asset: assets/fonts/Poppins-RegularItalic.ttf
-          weight: 400
           style: italic
         - asset: assets/fonts/Poppins-MediumItalic.ttf
           weight: 500
