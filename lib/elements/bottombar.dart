@@ -32,10 +32,46 @@ class _BottomBarState extends State<BottomBar> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Image.asset('assets/images/teambottombar.png', height: 32, color: _selectedIndex == 0 ? Colors.white : _notSelected),
-            Image.asset('assets/images/clipboardbottombar.png', height: 32, color: _selectedIndex == 1 ? Colors.white : _notSelected),
-            Image.asset('assets/images/statsbottombar.png', height: 32, color: _selectedIndex == 2 ? Colors.white : _notSelected),
-            Image.asset('assets/images/userbottombar.png', height: 32, color: _selectedIndex == 3 ? Colors.white : _notSelected),
+            IconButton(
+              onPressed: () { 
+                _onItemTapped(0); 
+              },
+              icon: Image.asset(
+                'assets/images/teambottombar.png', 
+                height: 32, 
+                color: _selectedIndex == 0 ? Colors.white : _notSelected
+              ),
+            ),
+            IconButton(
+              onPressed: () { 
+                _onItemTapped(1); 
+              },
+              icon: Image.asset(
+                'assets/images/clipboardbottombar.png', 
+                height: 32,
+                color: _selectedIndex == 1 ? Colors.white : _notSelected
+              ),
+            ),
+            IconButton(
+              onPressed: () { 
+                _onItemTapped(2); 
+              },
+              icon: Image.asset(
+                'assets/images/statsbottombar.png', 
+                height: 32, 
+                color: _selectedIndex == 2 ? Colors.white : _notSelected
+              ),
+            ),
+            IconButton(
+              onPressed: () {
+                _onItemTapped(3);
+              },
+              icon: Image.asset(
+                'assets/images/userbottombar.png', 
+                height: 32, 
+                color: _selectedIndex == 3 ? Colors.white : _notSelected
+              ),
+            ),
           ],
         ),
       ),
