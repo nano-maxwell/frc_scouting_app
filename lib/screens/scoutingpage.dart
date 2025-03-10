@@ -24,7 +24,7 @@ class ScoutingPage extends StatelessWidget {
                 "Match Scouting",
                 style: TextStyle(
                   color: whiteColor,
-                  fontFamily: 'Poppins',
+                  fontFamily: 'SF-Pro',
                   fontWeight: FontWeight.w700,
                   fontSize: 32,
                 ),
@@ -35,7 +35,7 @@ class ScoutingPage extends StatelessWidget {
                 "Total Contributions: 63",
                 style: TextStyle(
                   color: white50Percent,
-                  fontFamily: 'Poppins',
+                  fontFamily: 'SF-Pro',
                   fontWeight: FontWeight.w500,
                   fontSize: 15,
                 ),
@@ -49,7 +49,7 @@ class ScoutingPage extends StatelessWidget {
                 style: TextStyle(
                   color: whiteColor,
                   fontFamily: 'SF-Pro',
-                  fontWeight: FontWeight.w900,
+                  fontWeight: FontWeight.w700,
                   fontSize: 22,
                 ),
               ),
@@ -86,7 +86,7 @@ class ScoutingPage extends StatelessWidget {
                 style: TextStyle(
                   color: white50Percent,
                   fontFamily: 'SF-Pro',
-                  fontWeight: FontWeight.w900,
+                  fontWeight: FontWeight.w600,
                   fontSize: 13,
                 ),
               ),
