@@ -19,8 +19,16 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/clipboard.png
+    - assets/images/clipboardbottombar.png
+    - assets/images/statsbottombar.png
+    - assets/images/userbottombar.png
+    - assets/images/teambottombar.png
 
   fonts:
+    - family: SF-Pro
+      fonts:
+        - asset: assets/fonts/SF-Pro.ttf
+
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Thin.ttf

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'scoutingpage.dart';
+import 'screens/scoutingpage.dart';
 
 void main() {
   runApp(const MainApp());
