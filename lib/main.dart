@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'scoutingpage.dart';
+import 'package:frc_scouting_app/screens/homepage.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,9 +10,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ScoutingPage()
+      home: HomePage(),
     );
   }
 }
