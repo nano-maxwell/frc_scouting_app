@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:frc_scouting_app/elements/bottombar.dart';
 import 'package:frc_scouting_app/utils/colors.dart';
 
 class ScoutingPage extends StatelessWidget {
@@ -8,7 +7,7 @@ class ScoutingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor,
+      backgroundColor: bg_Color,
       
       // Centers all objedcts
       body: Center(
@@ -62,12 +61,12 @@ class ScoutingPage extends StatelessWidget {
                 // Circle
                 child: Container(
                   padding: const EdgeInsets.all(25),
-                  margin: const EdgeInsets.fromLTRB(0,15,0,35),
+                  margin: const EdgeInsets.fromLTRB(0,20,0,35),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: primaryPurpleColor,
+                    color: primaryColor,
                     boxShadow: [
-                      BoxShadow(color: purpleShadowColor, blurRadius: 32, spreadRadius: 10),
+                      BoxShadow(color: shadowColor, blurRadius: 20, spreadRadius: 5),
                     ]
                   ),
                   // Actual clipboard
@@ -93,7 +92,6 @@ class ScoutingPage extends StatelessWidget {
             ]
           )
       ),
-      bottomNavigationBar: BottomBar()
     );
   }
 }
