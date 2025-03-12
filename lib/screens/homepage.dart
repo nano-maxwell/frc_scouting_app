@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:frc_scouting_app/screens/scorespage.dart';
 import 'package:frc_scouting_app/screens/scoutingpage.dart';
 
+
+// initializes common colors 
 const Color _bottomBarBackgroundColor = Color(0xff191919);
 const Color _notSelected = Color(0xFF666666);
 
@@ -15,13 +17,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 1;
 
-    void _onItemTapped(int index) {
+    void _onItemTapped(int index) { // method that will swtich between pgaes using bottom nav bar, referring to each page as an index
       setState(() {
         _selectedIndex = index;
       });
     }
 
-  final List<Widget> _pages = [
+  final List<Widget> _pages = [ // lists all pages as an array
     Center(child: Text('Page for Index 0 (Coming Soon)', style: TextStyle(color: Colors.black))),
     ScoutingPage(),
     ScoresPage(),
@@ -31,7 +33,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_selectedIndex],
+      body: _pages[_selectedIndex], // this is with the onItemTapped method, what actually dictates each page number to index
 
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
@@ -40,9 +42,9 @@ class _HomePageState extends State<HomePage> {
           height: 90,
           color: _bottomBarBackgroundColor,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly, // youll never guess waht this does
             children: [
-              IconButton(
+              IconButton( // all icon button interactions
                 onPressed: () { 
                   _onItemTapped(0); 
                 },
