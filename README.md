@@ -1,8 +1,5 @@
 <h1>FRC Scouting App</h1>
-<h4>Last Updated: 3/9/25</h4>
-
-A mobile app developed by members of FIRST Robotics team 3464 "Sim-City"
-
+<h4>Last Updated: 3/12/25</h4>
 <h2>Introduction</h2>
 <h3>Mission statement</h3><br>
 Our app aims to provide in-depth statistics for FRC matches for teams to use during the season and to make scouting simple and fun for FIRST robotics participants and staff.
