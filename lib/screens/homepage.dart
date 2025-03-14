@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frc_scouting_app/screens/scorespage.dart';
 import 'package:frc_scouting_app/screens/scoutingpage.dart';
+import 'package:frc_scouting_app/utils/colors.dart';
 
 const Color _bottomBarBackgroundColor = Color(0xff191919);
 const Color _notSelected = Color(0xFF666666);
@@ -35,7 +36,7 @@ class _HomePageState extends State<HomePage> {
 
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
-          border: Border(top: BorderSide(width: 1, color: Color(0xFF333333)))),
+          border: Border(top: BorderSide(width: 1, color: borderColor))),
         child: BottomAppBar(
           height: 90,
           color: _bottomBarBackgroundColor,
