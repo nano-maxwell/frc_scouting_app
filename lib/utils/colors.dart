@@ -8,6 +8,8 @@ const Color bg_Color = Color(0xFF111111);
 const Color white50Percent = Color(0x80FFFFFF);
 const Color tileColor = Color(0xFF191919);
 const Color borderColor = Color(0xFF333333);
+const Color redOverlay = Color.fromARGB(105, 255, 11, 11);
+const Color blueOverlay = Color.fromARGB(105, 11, 84, 255);
 
 // original Purple = Color(0xFF8652FF)
 // original Shadow = Color(0x4D8652FF)

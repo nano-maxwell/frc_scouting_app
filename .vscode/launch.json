@@ -1,0 +1,168 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "$RF5T80U",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RF5T80U",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "$RF5T80U (profile mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RF5T80U",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "$RF5T80U (release mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RF5T80U",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "$RJ640DI",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RJ640DI",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "$RJ640DI (profile mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RJ640DI",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "$RJ640DI (release mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RJ640DI",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "$RME99TN",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RME99TN",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "$RME99TN (profile mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RME99TN",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "$RME99TN (release mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RME99TN",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_application_1",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RBUIL3J\\flutter_application_1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_application_1 (profile mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RBUIL3J\\flutter_application_1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_application_1 (release mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RBUIL3J\\flutter_application_1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "frc_scouting_app",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RBUIL3J\\frc_scouting_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "frc_scouting_app (profile mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RBUIL3J\\frc_scouting_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "frc_scouting_app (release mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RBUIL3J\\frc_scouting_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "frc_scouting_app-1",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RBUIL3J\\frc_scouting_app-1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "frc_scouting_app-1 (profile mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RBUIL3J\\frc_scouting_app-1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "frc_scouting_app-1 (release mode)",
+            "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RBUIL3J\\frc_scouting_app-1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "firstapp",
+            "cwd": "Users\\maxst\\projects\\firstapp",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "firstapp (profile mode)",
+            "cwd": "Users\\maxst\\projects\\firstapp",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "firstapp (release mode)",
+            "cwd": "Users\\maxst\\projects\\firstapp",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "frc_scouting_app-1",
+            "cwd": "Users\\maxst\\projects\\frc_scouting_app-1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "frc_scouting_app-1 (profile mode)",
+            "cwd": "Users\\maxst\\projects\\frc_scouting_app-1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "frc_scouting_app-1 (release mode)",
+            "cwd": "Users\\maxst\\projects\\frc_scouting_app-1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

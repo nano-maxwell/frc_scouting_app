@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frc_scouting_app/screens/scorespage.dart';
 import 'package:frc_scouting_app/screens/scoutingpage.dart';
+import 'package:frc_scouting_app/screens/userpage.dart';
 import 'package:frc_scouting_app/utils/colors.dart';
 
 const Color _bottomBarBackgroundColor = Color(0xff191919);
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
     Center(child: Text('Page for Index 0 (Coming Soon)', style: TextStyle(color: Colors.black))),
     ScoutingPage(),
     ScoresPage(),
-    Center(child: Text('User Page (Coming Soon)', style: TextStyle(color: Colors.black))),
+    UserPage(),
   ];
 
   @override
