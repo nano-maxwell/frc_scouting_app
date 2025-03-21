@@ -5,6 +5,7 @@ class FollowingTeam {
   int teamNumber;
   Color teamColor; // USE FRC COLORS WEBSITE API
   String winLossRatio; // use a toString()
+  double opr;
 
 
   FollowingTeam({
@@ -12,12 +13,13 @@ class FollowingTeam {
     required this.teamNumber,
     required this.teamColor,
     required this.winLossRatio,
+    required this.opr,
   });
 
   static List <FollowingTeam> getTeams () {
 
     List<FollowingTeam> teams = []; // initialize team arrayList
-
+    
 /* IN THE FUTURE use a for loop to get the teams that the user is following
 rather than manually adding. manually adding so i can get a proof of concept 
 once we do that, need to remember to make the getTeams() method take the parameters*/
@@ -28,6 +30,7 @@ once we do that, need to remember to make the getTeams() method take the paramet
         teamNumber: 3464, 
         teamColor: Colors.teal,
         winLossRatio: 0.5.toString(),
+        opr: 80.2,
       ),
     );
 
@@ -36,7 +39,8 @@ once we do that, need to remember to make the getTeams() method take the paramet
         teamName: "Orbit",
         teamNumber: 1690,
         teamColor: Colors.blue,
-        winLossRatio: 1.toString()
+        winLossRatio: 1.toString(),
+        opr: 12.0,
       ),
     );
 
@@ -45,7 +49,8 @@ once we do that, need to remember to make the getTeams() method take the paramet
         teamName: "Bionic Beef", 
         teamNumber: 97, 
         teamColor: Colors.green,
-        winLossRatio: 0.3.toString()
+        winLossRatio: 0.3.toString(),
+        opr: 1000000.0,
       ),
     );
 
