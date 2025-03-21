@@ -5,6 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Flutter: Attach to Device",
+            "type": "dart",
+            "request": "attach"
+        },
+        {
             "name": "$RF5T80U",
             "cwd": "$Recycle.Bin\\S-1-5-21-339880408-1914543853-3108511205-1001\\$RF5T80U",
             "request": "launch",

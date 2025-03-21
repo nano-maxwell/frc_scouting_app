@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:frc_scouting_app/utils/colors.dart';
 
-class FollowingTeam {
-  String teamName;
-  int teamNumber;
-  Color teamColor; // USE FRC COLORS WEBSITE API
-  String winLossRatio; // use a toString()
-  double opr;
-
+class FollowingTeam extends StatelessWidget {
+  final String teamName;
+  final int teamNumber;
+  final Color teamColor;
+  final String winLossRatio;
+  final double opr;
 
   FollowingTeam({
     required this.teamName,
@@ -16,12 +16,13 @@ class FollowingTeam {
     required this.opr,
   });
 
-  static List <FollowingTeam> getTeams () {
+static List <FollowingTeam> getTeams () {
 
     List<FollowingTeam> teams = []; // initialize team arrayList
     
 /* IN THE FUTURE use a for loop to get the teams that the user is following
 rather than manually adding. manually adding so i can get a proof of concept 
+
 once we do that, need to remember to make the getTeams() method take the parameters*/
 
     teams.add(
@@ -58,4 +59,55 @@ once we do that, need to remember to make the getTeams() method take the paramet
   return teams;
   }
 
+
+  @override
+  Widget build(BuildContext context) {
+    double screenHeight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
+
+    return Container(
+      width: 200,
+      decoration: BoxDecoration(
+        color: tileColor,
+        borderRadius: BorderRadius.circular(25),
+        border: Border.all(color: teamColor, width: 2),
+      ),
+      child: Padding(
+        padding: EdgeInsets.only(
+          left: screenWidth * 0.05,
+          top: screenHeight * 0.01,
+          right: screenWidth * 0.05,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                "$teamName | $teamNumber",
+                style: TextStyle(
+                  color: whiteColor,
+                  fontFamily: 'SF-Pro',
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+            Text(
+              "W/L: $winLossRatio",
+              style: TextStyle(
+                color: whiteColor.withOpacity(0.7),
+              ),
+            ),
+            Text(
+              "OPR: $opr",
+              style: TextStyle(
+                color: whiteColor.withOpacity(0.7),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }

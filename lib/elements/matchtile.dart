@@ -19,7 +19,7 @@ class MatchTile extends StatelessWidget {
     required this.matchNum,
     required this.eventKey,
   });
-
+  
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
