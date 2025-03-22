@@ -20,19 +20,47 @@ class UserPage extends StatelessWidget {
       body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           SizedBox(height: screenHeight * 0.07),
-          Padding(
-            padding: EdgeInsets.only(
-                left: screenWidth * 0.07), // CREATES TITLE "FOLLOWING TEAMS"
-            child: Text(
-              "Following Teams",
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 28,
-                fontWeight: FontWeight.w700,
-                color: whiteColor,
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.baseline,
+            textBaseline: TextBaseline.alphabetic,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(
+                    left: screenWidth * 0.07), // CREATES TITLE "FOLLOWING TEAMS"
+                child: Text(
+                  "Following Teams",
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 28,
+                    fontWeight: FontWeight.w700,
+                    color: whiteColor,
+                  ),
+                ),
               ),
-            ),
+SizedBox(width: screenWidth * 0.14),
+              Text(
+                "See All",
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white70,
+                ),
+              ),
+              // SizedBox(width: 5),
+              // Baseline(
+              //   baseline: 16,
+              //   baselineType: TextBaseline.alphabetic,
+              //   child: Icon(
+              //     Icons.arrow_forward_ios,
+              //     color: white50Percent,
+              //     size: 14,
+              //   ),
+              // ),
+            ],
           ),
+          
           Container(
               margin: EdgeInsets.symmetric(vertical: screenWidth * 0.05),
               height: 120,
@@ -56,16 +84,35 @@ class UserPage extends StatelessWidget {
 // START OF CONTRIBUTION LOG
         Padding(
           padding: EdgeInsets.only(left: screenWidth * 0.07),
-          child: Text(
-            "Contribution Log",
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              fontSize: 28,
-              fontWeight: FontWeight.w700,
-              color: whiteColor,
-            ),
+          child: Row(
+             crossAxisAlignment: CrossAxisAlignment.baseline,
+            textBaseline: TextBaseline.alphabetic,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                "Contribution Log",
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 28,
+                  fontWeight: FontWeight.w700,
+                  color: whiteColor,
+                ),
+              ),
+
+              SizedBox(width: screenWidth * 0.14),
+              Text(
+                "See All", // align this with above "see all" somehow pls
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white70,
+                ),
+              ),
+            ],
           ),
         ),
+        
       ]), 
       
     ); 
