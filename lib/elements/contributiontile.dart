@@ -31,11 +31,11 @@ class ContributionTile extends StatelessWidget {
 // // ENDGAME
 // final String endgameAction;
 
-ContributionTile({
-  // MISC
-required this.teamNumber,
-required this.matchNum,
-required this.allianceColor,
+  ContributionTile({
+    // MISC
+    required this.teamNumber,
+    required this.matchNum,
+    required this.allianceColor,
 
 // TELEOP
 // required this.coralL4,
@@ -60,34 +60,29 @@ required this.allianceColor,
 
 // //ENDGAME
 // required this.endgameAction,
-});
+  });
 
-static List <ContributionTile> getContributionTile () {
+  static List<ContributionTile> getContributionTile() {
+    List<ContributionTile> contributions = [];
 
-  List<ContributionTile> contributions = [];
+    contributions.add(
+      ContributionTile(teamNumber: 5000, matchNum: 12, allianceColor: 'Red'),
+    );
 
-  contributions.add(
-    ContributionTile(teamNumber: 5000, matchNum: 12, allianceColor: 'Red'),
+    contributions.add(
+      ContributionTile(teamNumber: 1235, matchNum: 42, allianceColor: 'Blue'),
+    );
 
-  );
+    contributions.add(
+      ContributionTile(teamNumber: 7562, matchNum: 76, allianceColor: 'Red'),
+    );
 
-   contributions.add(
-    ContributionTile(teamNumber: 1235, matchNum: 42, allianceColor: 'Blue'),
-
-  );
-  
-   contributions.add(
-    ContributionTile(teamNumber: 7562, matchNum: 76, allianceColor: 'Red'),
-
-  );
-  
- 
-  
-  return contributions;
-}
+    return contributions;
+  }
 
   @override
   Widget build(BuildContext context) {
+    DateTime now = DateTime.now();
     double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     return Center(
@@ -96,28 +91,49 @@ static List <ContributionTile> getContributionTile () {
         decoration: BoxDecoration(
           color: tileColor,
           borderRadius: BorderRadius.circular(25),
-          border: Border.all(color: determineAllianceColor(allianceColor), width: 2),
+          border: Border.all(
+              color: determineAllianceColor(allianceColor), width: 2),
         ),
         child: Padding(
           padding: EdgeInsets.only(
-          left: screenWidth * 0.05,
-          top: screenHeight * 0.01,
-          right: screenWidth * 0.05,
-        ),
+            left: screenWidth * 0.05,
+            top: screenHeight * 0.01,
+            right: screenWidth * 0.05,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              FittedBox(
-                fit: BoxFit.scaleDown,
-                child: Text(
-                'Match: $matchNum',
-                style: TextStyle(
-                    color: whiteColor,
-                    fontFamily: 'SF-Pro',
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                ),
-              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.baseline,
+                textBaseline: TextBaseline.alphabetic,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      'Match: $matchNum',
+                      style: TextStyle(
+                        color: whiteColor,
+                        fontFamily: 'SF-Pro',
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 60), // maybe use flexible widget?
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      'Time: ${now.hour}:${now.minute}:${now.second}',
+                      style: TextStyle(
+                        color: white50Percent,
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
+                  )
+                ],
               ),
               Text(
                 'Team: $teamNumber',
@@ -137,13 +153,12 @@ static List <ContributionTile> getContributionTile () {
       ),
     );
   }
-  Color determineAllianceColor (allianceColor) {
+
+  Color determineAllianceColor(allianceColor) {
     if (allianceColor == 'Red') {
       return Colors.red;
-    }
-    else {
+    } else {
       return Colors.blue;
     }
- 
   }
 }
