@@ -16,7 +16,7 @@ class FollowingTeam extends StatelessWidget {
     required this.opr,
   });
 
-static List <FollowingTeam> getTeams () {
+static List <FollowingTeam> getFollowingTeams () {
 
     List<FollowingTeam> teams = []; // initialize team arrayList
     

@@ -1,13 +1,15 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:frc_scouting_app/elements/contributiontile.dart';
 import 'package:frc_scouting_app/elements/followingteam.dart';
 import 'package:frc_scouting_app/utils/colors.dart';
 
 class UserPage extends StatelessWidget {
   UserPage({super.key});
 
-  List<FollowingTeam> teams = FollowingTeam.getTeams();
+  List<FollowingTeam> teams = FollowingTeam.getFollowingTeams();
+  List<ContributionTile> contributions = ContributionTile.getContributionTile();
 
   @override
   Widget build(BuildContext context) {
@@ -112,6 +114,23 @@ SizedBox(width: screenWidth * 0.14),
             ],
           ),
         ),
+        Container(
+              margin: EdgeInsets.symmetric(vertical: screenWidth * 0.05),
+              height: 120,
+              color: bg_Color,
+              child: ListView.separated( // creates a listview
+                padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.07),
+                itemCount: contributions.length,
+                scrollDirection: Axis.horizontal,
+                separatorBuilder: (context, index) => SizedBox(width: 20),
+                itemBuilder: (context, index) { // builds the teams that are created in followingteam.dart
+                  return ContributionTile(
+                  matchNum: contributions[index].matchNum, 
+                  teamNumber: contributions[index].teamNumber, 
+                  allianceColor: contributions[index].allianceColor, 
+                  );
+                },
+              ))
         
       ]), 
       
